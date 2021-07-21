@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title><%= %></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="/cs.css">
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="icon" href="/images/cuc.png" type="image/gif">
+		<noscript><link rel="stylesheet" href="public/assets/css/noscript.css" /></noscript>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-8BP81T1S2H"></script>
+			<script>
+			  window.dataLayer = window.dataLayer || [];
+			  function gtag(){dataLayer.push(arguments);}
+			  gtag('js', new Date());
+
+			  gtag('config', 'G-8BP81T1S2H');
+			</script>
+		
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				
+				<!-- Header -->
+					<header id="header">
+						 <h1><a href="/">Team CUC</a></h1>
+                  <nav>
+                     <a href="#menu">Menu</a>
+                  </nav>
+               </header>
+
+            <!-- Menu -->
+               <nav id="menu">
+                  <div class="inner">
+                     <h2>Menu</h2>
+                     <ul class="links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/projects">Projects</a></li>
+                    
+                        <li><a href="/idea.htm">More Ideas</a></li>
+                         <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/exmp/supportus">Supports Us</a></li>
+                     </ul>
+                     <a href="#" class="close">Close</a>
+                  </div>
+               </nav>
+
+				<!-- Wrapper -->
+
+						<section id="wrapper">
+						<header>
+
+							<h1   style="font-family: 'Courier New', monospace; font-size:38px"  align='center' > <%=post[0].field%> PROJECT</h1>
+							
+
+							<div class="inner">
+								
+		<img src="/images/android.png" class='center'  width="100%" height="auto">
+							
+							 <%for(let i=0;i<post.length;i++)		
+						{	%> 
+								<button type="button" class="collapsible"> <%=post[i].title%></button>
+							<div  class="content" >
+							  <ul>
+							  	<li><b>Description : </b><%=post[i].description%>  </li>
+							  	<li><b>Sources : </b><a href="https://github.com/martha889/BTP"target="_blank"><%=post[i].sources%></a></li>
+							  	<li><b>Output : </b><%=post[i].output%> </li>
+							  	<li>Project by : <%=post[i].name%></li>
+							  </ul>
+							</div><%}%> 
+
+							<!-- <button type="button" class="collapsible"> NorthStar - a multipurpose productivity system Flutter App</button>
+							<div  class="content" >
+							  <ul>
+							  	<li><b>Description : </b><ol>
+							  		<li>Designed and developed an "all-in-one" productivity app integrated with features like habit-tracker, pomodoro-timer, to-do lists, calendar integration, voice & written notes, meditation routine etc.</li>
+							  		<li>Emphasis on UI design which minimizes the friction in switching between different third-party apps.</li>
+							  		<li>Provides complete customizability and themed designs to align with one's personal-productivity goals.</li>
+							  		<li><b>Dart Packages used :-</b> flare_flutter, sqflite, flutter_audio_recorder, table_calendar, charts_flutter etc. </li>
+							  	</ol>
+							  	<li><b>Sources : </b>The complete flutter development course by App Brewery</li>
+							  	<li><b>Exposure : </b>Android Studio, Flutter SDK, Dart, UI design, API integration</li>
+							  	<li> Project by : Harshit Shukla</li>
+							  </ul>
+							</div>
+
+
+							<button type="button" class="collapsible"> Real-Time emotion detection App</button>
+							<div  class="content" >
+							  <ul>
+							  	<li><b>Description : </b>Built a CNN model that predicts the emotion of the face and deploys it in Android</li>
+							  	<li><b>Sources : </b><a href="https://github.com/ssj-ali/XpressVision"target="_blank">Github Repository</a></li>
+							  	<li><b>Exposure : </b>Android App Development, Machine Learning (polynomial regression), Cloud Computing</li>
+							  	<li>Project by : Mobasshir Ali</li>
+							  </ul> -->
+							</div>
+
+							
+			
+				<!-- Footer -->
+									<button class="conte" ><a href="/exmp/supportus">Add your Projects</a></button>
+
+									<h2 class="cont"> Contact us: <a style="  text-transform: lowercase;"href = "mailto:teamcuc.18@gmail.com">teamcuc.18@gmail.com</a> </h2>
+
+
+</div>
+					
+
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.scrollex.min.js"></script>
+			<script src="/assets/js/browser.min.js"></script>
+			<script src="/assets/js/breakpoints.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/main.js"></script>
+			<script src="/assets/js/jsan.js"></script>
+			<!-- <script src=""></script> -->
+
+
+
+	</body>
+</html>
